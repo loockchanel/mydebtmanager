@@ -15,6 +15,7 @@ export const HeroWrapper = styled.div`
     align-items: center;
     overflow: hidden;
     position: relative;
+    background: black;
 `
 
 export const HeroImage = styled.img`
@@ -24,17 +25,25 @@ export const HeroImage = styled.img`
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    opacity: 0.5;
 `
 
 export const HeroContent = styled.div`
-    position: relative;
+    padding: 200px;
     z-index: 10;
     flex-direction: column;
     max-width:1600px ;
     width: calc(100% - 100px);
     color: #fff;
+    
 
     h1{
-        font-size: clamp(1rem, 8vw, 2rem);
+        font-size: clamp(5rem, 8vw, 2rem);
+        color: #a5b06d;
+    }
+
+    h2{
+        color: #fff;
+        font-size: clamp(4rem, 8vw, 2rem);
     }
 `
