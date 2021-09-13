@@ -1,15 +1,26 @@
 import React from 'react'
 import {
-    InfoContainer,
-    InfoRow,
-    InfoWrapper,
-    Column1,
-    Column2,
-    TextWrapper,
-    TopLine,
-    Heading,
-    Subtitle,
-    BtnWrap,
+    <InfoContainer lightBg={lightBg} id={id}>
+        <InfoWrapper>
+            <InfoRow imgStart={imgStart}>
+                <Column1>
+                    <TextWrapper>
+                        <TopLine>{topLine}</TopLine>
+                        <Heading lightText={lightText}>{headline}</Heading>
+                        <Subtitle darkText={darkText}>{description}</Subtitle>
+                        <BtnWrap> to= 'home' />
+                        </BtnWrap>
+                    </TextWrapper>
+                </Column1>
+                <Column2>
+                    <ImgWrap>
+                        <Img />
+                    </ImgWrap>
+                </Column2>
+            </InfoRow>
+        </InfoWrapper>
+    </InfoContainer>
+
     ImgWrap,
     Img
 } from './InfoElement'
